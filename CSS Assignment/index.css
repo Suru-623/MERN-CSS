@@ -1,0 +1,32 @@
+.box{
+    height:500px;
+    width:500px;
+    border: 2px solid black;
+    border-radius: 22px;
+    position: absolute;
+}
+
+.smallBox{
+    height:50px;
+    width:50px;
+    border: 2px solid red;
+    background-color: red;
+    border-radius: 20px;
+    position: absolute;
+    transition: transform 4s;
+    animation-name: moving;
+    animation-duration: 10s;
+    animation-delay: 1s;
+}
+
+@keyframes moving{
+    0%{left:0px; top:10px}
+    12%{left:455px; top:10px}
+    26%{left:455px; top:455px}
+    48%{left:10px; top:455px}
+    60%{left:10px; top:10px}
+    71%{left:10px; top:455px}
+    80%{left:455px; top:455px}
+    90%{left:455px; top:10px}
+    100%{left:10px; top:10px}
+}
